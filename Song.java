@@ -14,6 +14,14 @@ public class Song{
 
     }
 
+    private timeTest(){
+          Time time = new Time();
+          time.setToNow();
+           long currentTime = System.currentTimeMillis();
+           int julianDay = Time.getJulianDay(dateInMillis, time.gmtoff);
+
+    }
+
     /* read song.txt, get token, put in the array list */
     public void getData(){
 
