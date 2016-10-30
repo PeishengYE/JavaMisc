@@ -1,7 +1,12 @@
-public class Server {
+import java.io.*;
+import java.util.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.concurrent.*;
+public class MultiThreadSocketServer {
 
     public static void main(String[] args) {
-        new Server().startServer();
+        new MultiThreadSocketServer().startServer();
     }
 
     public void startServer() {
